@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore reusable web components, buttons, cards, tables, and accessible form elements.">
+    <title>Creative Space - Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">Creative Space</a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="compenent.html">Components</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="section">
+            <h1>Our Components</h1>
+            <p class="label">
+                Explore simple and reusable elements for modern websites.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Color Palette</h2>
+
+            <div class="swatches">
+                <div class="swatch">
+                    <i style="background: var(--primary)"></i>
+                    <code>--primary</code>
+                </div>
+
+                <div class="swatch">
+                    <i style="background: var(--bg)"></i>
+                    <code>--bg</code>
+                </div>
+
+                <div class="swatch">
+                    <i style="background: var(--text)"></i>
+                    <code>--text</code>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Button Styles</h2>
+
+            <div class="row">
+                <div>
+                    <button class="btn">Primary Button</button>
+                    <div class="label">Default</div>
+                </div>
+
+                <div>
+                    <button class="btn is-hover">Hover Button</button>
+                    <div class="label">Hover</div>
+                </div>
+
+                <div>
+                    <button class="btn" disabled>Unavailable</button>
+                    <div class="label">Disabled</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Information Card</h2>
+
+            <article class="card" style="max-width: 360px">
+                <h3>Web Design Basics</h3>
+                <p>
+                    Learn how simple components help create organized
+                    and user-friendly websites.
+                </p>
+                <a class="btn" href="#contact">Learn More</a>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2>Team Members</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Specialty</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sarah Ahmed</td>
+                            <td>Web Designer</td>
+                            <td>sarah@example.com</td>
+                            <td><span class="badge">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Omar Ali</td>
+                            <td>Developer</td>
+                            <td>omar@example.com</td>
+                            <td><span class="badge">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mona Hassan</td>
+                            <td>UI Designer</td>
+                            <td>mona@example.com</td>
+                            <td><span class="badge off">Busy</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Adam Samir</td>
+                            <td>Tester</td>
+                            <td>adam@example.com</td>
+                            <td><span class="badge">Available</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Notifications</h2>
+
+            <div class="alert alert-info" role="status">
+                Here is some useful information.
+            </div>
+
+            <div class="alert alert-success" role="status">
+                Your changes have been saved successfully.
+            </div>
+
+            <div class="alert alert-danger" role="alert">
+                Something went wrong. Please try again.
+            </div>
+        </section>
+
+        <section class="section" id="modal-section">
+            <h2>Modal Window</h2>
+
+            <p>Click below to view more information.</p>
+
+            <a href="#demo-modal" class="btn">View Details</a>
+
+            <div id="demo-modal" class="modal-overlay">
+                <div class="modal-box"
+                     role="dialog"
+                     aria-labelledby="modal-title"
+                     aria-describedby="modal-description">
+
+                    <a href="#modal-section"
+                       class="modal-close"
+                       aria-label="Close modal">&times;</a>
+
+                    <h3 id="modal-title">Welcome</h3>
+
+                    <p id="modal-description">
+                        This window uses CSS without JavaScript.
+                    </p>
+
+                    <a href="#modal-section" class="btn">Close</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Have questions about our components?</p>
+            <a class="btn" href="mailto:hello@example.com">
+                Send an Email
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" style="margin-top: 48px">
+        <div class="container">
+            Creative Space &copy; 2026
+        </div>
+    </footer>
+
+</body>
+</html>
